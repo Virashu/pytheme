@@ -1,7 +1,6 @@
 import os
 import pyautogui
 import sys
-import subprocess
 
 
 if len(sys.argv) < 2:
@@ -13,35 +12,35 @@ theme = sys.argv[1]
 themes = {
     "red": {
         "wallpaper": "~/Pictures/godishs-hires.jpg",
-        "color": "color9",
+        "color": "#fb4934",
     },
     "red2": {
         "wallpaper": "~/Pictures/godishb-hires.jpg",
-        "color": "color9",
+        "color": "#fb4934",
     },
     "green": {
         "wallpaper": "~/Pictures/green\\ leaves.jpg",
-        "color": "color10",
+        "color": "#b8bb26",
     },
     "greenbug": {
         "wallpaper": "~/Pictures/bug.jpg",
-        "color": "color10",
+        "color": "#b8bb26",
     },
     "blue": {
         "wallpaper": "~/Pictures/meat.jpg",
-        "color": "color12",
+        "color": "#83a598",
     },
     "pink": {
         "wallpaper": "~/Pictures/happy\\ lucky.jpg",
-        "color": "color13",
+        "color": "#d3869b",
     },
     "pinks": {
         "wallpaper": "~/Pictures/shinobu4.jpg",
-        "color": "bg4",
+        "color": "#d3869b",
     },
     "blackpink": {
         "wallpaper": "~/Pictures/лэйн.png",
-        "color": "color13",
+        "color": "#d3869b",
     },
 }
 
@@ -60,17 +59,12 @@ os.system("feh --bg-fill {}".format(themes[theme]['wallpaper']))
 with open("/home/virashu/.Xresources", "r+") as f:
     res = f.readlines()
     r = []
-    color = themes[theme]['color']
-    newcolor = subprocess.getoutput("xrdb -query | grep -Po '(?<=\\*.%s:\\t)(#[0-9abcdef]{6})'" % (color))
-    os.system("echo %s >> log.txt" % (newcolor))
     for l in res:
         if l.startswith("dwm.selbgcolor:"):
             # r.append('!' + l)
-            r.append("dwm.selbgcolor: {}\n".format(newcolor))
+            r.append("dwm.selbgcolor: {}\n".format(themes[theme]['color']))
         elif l.startswith("dwm.selbordercolor:"):
-            #r.append("dwm.selbordercolor: {}\n".format(themes[theme]['color']))
-            r.append("dwm.selbordercolor: {}\n".format(newcolor))
-
+            r.append("dwm.selbordercolor: {}\n".format(themes[theme]['color']))
         else:
             r.append(l)
 

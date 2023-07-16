@@ -1,14 +1,19 @@
-dwm.normbgcolor: #282828
+wallpaper: /home/virashu/Pictures/arch-gruvbox-dark.png
+
+dwm.borderpx: 0
+dwm.barborder: 0
+
 dwm.normfgcolor: #ebdbb2
+dwm.normbgcolor: #282828
 dwm.normbordercolor: #282828
 
 dwm.selfgcolor: #505050
 dwm.selbgcolor: #b8bb26
-dwm.selbordercolor: #cccccc
+dwm.selbordercolor: #b8bb26
 
 *.foreground: #ebdbb2
 *.background: #282828
-st.cursorColor: #ebdbb2
+
 *.color0: #1d2021
 *.color1: #cc241d
 *.color2: #98971a
@@ -26,3 +31,8 @@ st.cursorColor: #ebdbb2
 *.color13: #d3869b
 *.color14: #8ec07c
 *.color15: #fbf1c7
+
+*.bg0: #282828
+*.bg1: #3c3836
+*.bg2: #504945
+*.bg3: #665c54

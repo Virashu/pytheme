@@ -1,0 +1,41 @@
+wallpaper: /home/virashu/bitmap5.png
+
+dwm.barborder: 4
+dwm.borderpx: 4
+
+dwm.normfgcolor: #fad000
+dwm.normbgcolor: #2d2b55
+dwm.normbordercolor: #fad000
+
+dwm.selfgcolor: #2d2b55
+dwm.selbgcolor: #fad000
+dwm.selbordercolor: #fad000
+
+kitty.background_opacity: 0.7
+
+*.foreground: #fad000
+*.background: #2d2b55
+st.cursorColor: #fad000
+*.color0: #000000
+*.color1: #ec3a37
+*.color2: #3ad900
+*.color3: #fad000
+*.color4: #4d21fc
+*.color5: #ad70fc
+*.color6: #35ad68
+*.color7: #5c5c61
+
+*.color8: #5c5c61
+*.color9: #ff000d
+*.color10: #00ff00
+*.color11: #ffff03
+*.color12: #9effff
+*.color13: #fb94ff
+*.color14: #80ffbb
+*.color15: #ffffff
+
+*.bg0: #2d2b55
+*.bg1: #1f1f41
+*.bg2: #1f1f41
+*.bg3: #1f1f41
+*.bg4: #1f1f41

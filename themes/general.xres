@@ -1,0 +1,4 @@
+!dwm.barborder: 0
+!dwm.borderpx: 2
+dwm.sidepad: 16
+dwm.vertpad: 8
